@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+        <title>Playa de la Caleta</title>
+        <meta name="description" content="Descubre La Playa de la Caleta a través de una ruta por imágenes y vídeos ambientado con el sonido de las olas"/>
+        <meta name="keywords" content="atardecer, playa, Caleta, Cádiz, Cadiz, beach, galeria, fotos, gallery, photos, patrimonio"/>
+        <meta name="author" content="María del Rocío López García" />
+        <meta name="robots" content="index"/>
+        <meta name="theme-color" content="#25303b"/>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/styles/inicio.css" />
+        <link rel="icon" type="image/x-icon" href="/images/icons/isotipo.png">
+    </head>
+
+    <body id="cuerpo">
+        <!-- Vídeo background -->
+        <video autoplay muted loop id="myVideo">
+            <source src="/video/palmera.mov" type="video/mp4" />
+        </video>
+        <header>
+            <div class="container-fluid">
+                <!-- On/Off sonido y hora de puesta de sol -->
+                <div id="ajustes" class="row">
+                    <div class="col-12 d-flex justify-content-between">
+                        <!-- Hora de la puesta de sol -->
+                        <div id="sunset-time" class="d-flex align-items-center boton-ajustes">
+                            <span id="hora" class="texto-ajustes"></span>
+                            <span class="texto-ajustes atardecer"
+                                >PUESTA DE SOL</span>
+                        </div>
+                        <!-- Botón para activar/desactivar el sonido -->
+                        <button id="btn-sound" class="d-flex align-items-center boton-ajustes">
+                            <span id="sound" class="texto-ajustes">SONIDO</span>
+                            <div id="circulo"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid d-flex flex-column justify-content-center">
+                <!-- Imágenen central-->
+                <div id="row-imagen-balneario" class="row d-flex justify-content-center align-items-center">
+                    <div id="col-imagen-balneario-1" class="col-9 col-sm-10 col-md-9 col-lg-8 col-xl-7 d-flex justify-content-start">
+                        <div id="div-texto">
+                            <h2>
+                                Descubre la playa de la ciudad más antigua de
+                            </h2>
+                            <!-- Línea divisoria entre los los títulos -->
+                            <div></div>
+                            <h3>Occidente</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen lateral -->
+
+            <div id="contenedor-absolute" class="container-fluid">
+                <!-- Imágenes laterales -->
+                <div id="menu-row" class="row d-flex justify-content-center align-items-center">
+                    <div id="contenedor-imagenes-menu" class="col-9 col-sm-10 col-md-9 col-lg-8 col-xl-7 d-flex flex-column justify-content-around align-items-end">
+                        <!-- Botón redirige a Galería de imágenes -->
+                        <button class="imagen-menu d-flex justify-content-center">
+                            <a href="/index/galeria.html">
+                                <p>Galería</p>
+                            </a>
+                        </button>
+                        <!-- Botón aparece breve texto explicativo sobre la playa -->
+                        <button id="btn-playa" class="imagen-menu d-flex justify-content-center">
+                            <p>La playa</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Contenedor informativo acerca de la finalidad, elaboración y autoría de la aplicación -->
+
+        <div id="pop-up">
+            <span class="d-flex justify-content-end">
+                <button class="close-btn" id="close-pop-up">x</button>
+            </span>
+            <div id="contenedor-h3">
+                <h3>Información</h3>
+            </div>
+            <h4>sobre la aplicación</h4>
+            <section class="d-flex flex-column justify-content-between">
+                <p>
+                    La presente web ha sido realizada con fines formativos para
+                    aumentar mis conocimientos en el área del Diseño y la
+                    Programación Web, aplicando:
+                </p>
+                <div id="contenedor-logos-dev" class="d-flex justify-content-between">
+                    <img src="/images/dev-logos/html.png" alt="Icono html" />
+                    <img src="/images/dev-logos/css.png" alt="Icono css" />
+                    <img src="/images/dev-logos/js.png" alt="Icono JavaScript" />
+                    <img src="/images/dev-logos/bootstrap.png" alt="Icono Bootstrap" />
+                    <img src="/images/dev-logos/sass.png" alt="Icono Sass" />
+                </div>
+                <p>Diseñadora Web: Mª del Rocío López García</p>
+                <p>
+                    (La totalidad del contenido gráfico y multimedia visual es
+                    de realización y autoría propia.)
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/roc%C3%ADo-l%C3%B3pez-web-designer/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </p>
+            </section>
+        </div>
+
+        <!-- Contenedor informativo sobre las imágenes que recoge la página web -->
+
+        <div id="pop-descripcion">
+            <span id="span-close" class="d-flex justify-content-end">
+                <button class="close-btn" id="close-pop-descripcion">x</button>
+            </span>
+            <div id="contenedor-section" class="d-flex flex-column justify-content-between">
+                <section>
+                    <span class="caracteristicas d-flex align-items-center flex-column">
+                        <p class="carac-1">Custodiada</p>
+                        <p class="carac-2">entre dos castillos.</p>
+                    </span>
+                    <span class="caracteristicas d-flex align-items-center flex-column">
+                        <p class="carac-1">Popular</p>
+                        <p class="carac-2">por su mágico atardecer.</p>
+                    </span>
+                    <span class="caracteristicas d-flex align-items-center flex-column">
+                        <p class="carac-1">Inspiradora</p>
+                        <p class="carac-2">de grandes músicos y poetas.</p>
+                    </span>
+                </section>
+                <section id="section-descripcion">
+                    <p id="descripcion-pagina">
+                        Realiza una ruta por la playa más querida de la ciudad
+                        de Cádiz guiada por fotografías que ilustran desde el
+                        Castillo Santa Catalina hasta el Castillo San Sebastián
+                        pasando por El Balneario de Nuestra Señora de la Palma y
+                        del Real. 
+                    </p>
+                </section>
+            </div>
+        </div>
+
+
+
+        <footer class="d-flex align-items-end justify-content-end">
+            <button id="info" class="d-flex align-items-center justify-content-center">i</button>
+        </footer>
+
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/script/ajustes.js"></script>
+        <script src="/script/visual.js"></script>
+        <script src="/script/reloj.js"></script>
+        <script src="/script/inicio.js"></script>
+    </body>
+</html>

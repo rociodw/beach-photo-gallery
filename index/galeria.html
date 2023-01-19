@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+        <title>GALERÍA DE FOTOS</title>
+        <meta name="description" content="Imágenes de la naturaleza y patrimonio de la Playa de la Caleta hasta el atardecer"/>
+        <meta name="keywords" content="gaviotas, castillo, malecon,  nubes, cielo, mar, olas, palmera, historia, cadiz, ruta, barcas"/>
+        <meta name="author" content="María del Rocío López García" />
+        <meta name="robots" content="index"/>
+        <meta name="theme-color" content="#25303b"/>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="icon" type="image/x-icon" href="/images/icons/isotipo.png">
+
+    </head>
+
+    <body id="body-gallery">
+        <!-- Encabezado con botones -->
+        <header>
+            <div class="container-fluid">
+                <div id="menu-galeria" class="row">
+                    <div id="contenedor-botones" class="col-12 ">
+                        <!-- Botón para redirigir al usuario al incio -->
+                        <button id="btn-inicio" class="btn-menu-galeria">
+                            <a href="/index/inicio.html">
+                                <span class="texto-menu-galeria">INICIO</span>
+                                <div class="circulo-menu-2"></div>
+                            </a>
+                        </button>
+                        <!-- Botón para activar/pausar el audio -->
+                        <button id="btn-sound" class="btn-menu-galeria">
+                            <span class="texto-menu-galeria">SONIDO</span>
+                            <div id="circulo" class="circulo-menu-2"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Cuerpo de la página (Se compone de dos contenedores para crear el efecto de desplazamiento horizontal. Para ello, el contenedor superpuesto debe tener la posición fixed, y el situado en la capa inferior debe tener la altura exacta para visualizar la totalidad del contenido) -->
+        <main>
+            <!-- Capa inferior: -->
+            <div id="cuerpo-gallery">
+                <!-- Este contenedor sirve como referencia para desplazar la página hasta la primera imagen con el botón 'up'-->
+                <div id="top"></div>
+                <!-- La siguiente imagen aparecerá al final de la galería -->
+                <div>
+                    <img id="theEnd" src="/images/gallery/theEnd.png" alt="Comparsa La Guayabera, Playa Dorada" />
+                </div>
+            </div>
+
+            <!-- IMÁGENES EN MINIATURA -->
+            <!-- Estas imágenes se desplazarán horizontalmente en la parte inferior de la página al hacer scroll -->
+            <div class="container-fluid" id="gallery-container">
+                <div class="row" id="main-row">
+                    <div id="contenedor-miniaturas" class="col-12">
+                        <!-- 'Imagen-1' no se visualizará, al igual que las dos últimas, 13 y 14 -->
+                        <div id="imagen-1" class="img-miniatura"></div>
+                        <div id="imagen-2" class="img-miniatura">
+                            <img src="/images/gallery/imagen-1.jpg" alt="Castillo San Sebastián" />
+                        </div>
+                        <!-- Los contenedores que tengan el botón con la clase 'live' activarán un vídeo al ser pulsados -->
+                        <div id="imagen-3" class="img-miniatura live-miniatura">
+                            <button id="live-paseo" class="live">Live</button>
+                            <img src="/images/gallery/imagen-2.jpg" alt="Paseo Castillo San Sebastián" />
+                        </div>
+                        <div id="imagen-4" class="img-miniatura">
+                            <img src="/images/gallery/imagen-3.jpg" alt="Vistas desde el Castillo Santa Catalina a la Playa de la Caleta" />
+                        </div>
+                        <div id="imagen-5" class="img-miniatura">
+                            <img src="/images/gallery/imagen-4.jpg" alt="Monumento al creador de las comparsas, Paco Alba" />
+                        </div>
+                        <div id="imagen-6" class="img-miniatura live-miniatura">
+                            <button id="live-castillo" class="live">Live</button>
+                            <img src="/images/gallery/imagen-5.jpg" alt="Lateral del Castillo San Sebastián con vistas al mar" />
+                        </div>
+                        <div id="imagen-7" class="img-miniatura">
+                            <img src="/images/gallery/imagen-6.jpg" alt="Castillo Santa Catalina y las barcas de la Playa de la Caleta" />
+                        </div>
+                        <div id="imagen-8" class="img-miniatura">
+                            <img src="/images/gallery/imagen-7.jpg" alt="Malecón al atarceder" />
+                        </div>
+                        <div id="imagen-9" class="img-miniatura live-miniatura">
+                            <button id="live-palmera" class="live">Live</button>
+                            <img id="img-palmera" src="/images/gallery/imagen-8.jpg" alt="Palmera a contraluz" />
+                        </div>
+                        <div id="imagen-10" class="img-miniatura">
+                            <img src="/images/gallery/imagen-9.jpg" alt="Castillo San Sebastián en el atarceder" />
+                        </div>
+                        <div id="imagen-11" class="img-miniatura">
+                            <img src="/images/gallery/imagen-10.jpg" alt="Gaviotas en la orilla de la playa" />
+                        </div>
+                        <div id="imagen-12" class="img-miniatura live-miniatura">
+                            <button id="live-sky" class="live">Live</button>
+                            <img src="/images/gallery/imagen-11.jpg" alt="Cielo y nubes al atardecer" />
+                        </div>
+                        <div id="imagen-13" class="img-miniatura">
+                            <img src="" />
+                        </div>
+                        <div id="imagen-14" class="img-miniatura">
+                            <img src="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- El siguiente contenedor muestra las imágenes incluidas en JavaScript. -->
+            <div class="container-fluid" id="contenedor-fixed">
+                <div id="fila-galeria" class="row">
+                    <div id="contenedor-imagen-izquierda" class="contenedor-lateral col-2 col-md-3 col-lg-4 columna-fixed"></div>
+                    <div id="contenedor-imagen-centro" class="col-8 col-md-6 col-lg-4 columna-fixed">
+                        <img id="logo-centro" class="img-fluid" src="/images/loading/logo.png" alt="Logo Playa de la Caleta" />
+                    </div>
+                    <div id="contenedor-imagen-derecha" class="contenedor-lateral col-2 col-md-3 col-lg-4 columna-fixed"></div>
+                </div>
+            </div>
+
+            <!-- Contenedor del vídeo al pulsar los botones con la clase'live' -->
+            <div id="video">
+                <video autoplay muted loop>
+                    <source id="sourceVideo" src="/video/palmera.mov" type="video/mp4" />
+                </video>
+            </div>
+        </main>
+        <!-- En el pie de página encontramos dos botones en los alterales del inferior de la ventana que sirven para desplazar la galería desde donde se encuentre el usuario en hasta el final o principio de la misma -->
+        <footer>
+            <button id="up">
+                <a href="#top">
+                    <img src="/images/icons/down.png" alt="Flecha para ir al principio de la galería" />
+                </a>
+            </button>
+            <button id="down">
+                <a href="#theEnd">
+                    <img src="/images/icons/down.png" alt="Flecha para ir al final de la galería" />
+                </a>
+            </button>
+        </footer>
+
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/script/galeria.js"></script>
+        <script src="/script/ajustes.js"></script>
+    </body>
+</html>

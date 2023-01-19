@@ -1,0 +1,543 @@
+:root{
+    --letter-color:#a5a5a5;
+    --background-color: #25303b;
+}
+
+@font-face {
+    font-family: Bagnard;
+    src: url(/font/Bagnard.otf);
+}
+
+@font-face {
+    font-family: HelveticaThin;
+    src: url(/font/HelveticaThin.ttf);
+}
+
+@font-face {
+    font-family: HelveticaBold;
+    src: url(/font/HelveticaBold.ttf);
+}
+
+@font-face {
+    font-family: HelveticaThin;
+    src: url(/font/HelveticaThin.ttf);
+}
+
+@font-face {
+    font-family: yaseva;
+    src: url(/font/Yeseva.ttf);
+}
+
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+#cuerpo{
+    height: 100vh;
+    width: 100vw;
+    padding: 0%;
+    margin: 0%;
+    background-color:var(--background-color);
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* VIDEO BACKGROUND */
+
+video{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    margin-top: 3em;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    opacity: 0.2;
+    scale: 1.3;
+    filter: saturate(0) contrast(4);
+    z-index:-3;
+}
+
+/* HEADER */
+
+#ajustes{
+    position: fixed;
+    width: 100%;
+    padding:1em 1em 0em 0em;
+    z-index: 3;
+}
+
+.boton-ajustes{
+    padding:4px 0px 4px 0px; 
+    background-color: transparent;
+    border:none;
+}
+
+.texto-ajustes{
+    font-family: helveticathin;
+    letter-spacing: 4px;
+    color:var(--letter-color);
+    font-size:.6em;
+}
+
+/* Hora atardecer */
+#sunset-time:not(:hover) #hora{
+    letter-spacing: 4px;
+    transition-duration: 1s;
+}
+
+#sunset-time:hover #hora{
+    cursor: pointer;
+    letter-spacing: 9px;
+    transition-duration: 1s;  
+    
+}
+
+/* Botón sonido */
+
+#sound{
+    text-decoration:none;
+}
+
+#circulo{
+    height: 5px;
+    width:5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color:var(--letter-color);
+}
+
+#sunset-time span:first-child{
+    margin-right: 10px;
+    font-size:.6em;
+    font-weight: bold;
+    padding:3px;
+    border:.5px solid white;
+}
+
+#sunset-time span:last-child{
+    padding-top: 7px;
+    font-size:.6em;
+}
+
+#btn-sound:hover span{
+    cursor: pointer;
+    letter-spacing: 9px;
+    transition-duration: 1s;  
+}
+
+#btn-sound:not(:hover) span{
+    letter-spacing: 4px;
+    transition-duration: 1s;
+}
+
+/* Imágenes balneario: */
+#row-imagen-balneario{
+    height: 100vh;
+    width:100vw;
+    margin: 1em 1em 0em 1em;
+    filter: saturate(0.5);
+}
+
+#col-imagen-balneario-1{
+    height:80%;
+    margin-right:7em;
+    background-image: url(/images/inicio/img-1.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    box-shadow: rgb(0, 0, 0)  0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;   
+    border: .5px solid rgb(220, 220, 220);
+}
+
+/* Títulos */
+#div-texto{
+    height: 30%;
+    padding:30px 0px 0px 30px;
+}
+
+#div-texto h2{
+    font-family: helvetica;
+    color:rgb(220, 220, 220);
+    font-size:.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width:50%;
+    line-height: 15px;
+} 
+
+#div-texto h3{
+    font-family: helveticabold;
+    color:rgb(220, 220, 220);
+    letter-spacing: 2px;
+    margin-top: .5em;
+    font-size:2em;
+}
+
+/* Linea divisoria entre títulos */
+#div-texto div{
+    width: 30%;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    height: .5em;
+}
+
+/* Menu ('Galería', 'La playa') */
+
+#contenedor-absolute{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    z-index: 2;
+}
+
+#menu-row{
+    height: 100vh;
+    width:100vw;
+    filter: saturate(0.5);
+    margin-top: 1em;
+
+}
+
+#contenedor-imagenes-menu{
+    height:80%;
+    padding: 0%;
+    margin: 0em 1em 0em 1em;
+}
+
+.imagen-menu{
+    width:10em;
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.4)  0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+    border: 1px solid rgb(220, 220, 220);
+    animation:zoom .7s cubic-bezier(.25,.46,.45,.94) both
+}
+
+/* Imágenes laterales */
+#contenedor-imagenes-menu button:first-of-type{
+    background-image: url(/images/inicio/img-2.jpeg);
+}
+
+#contenedor-imagenes-menu button:last-of-type{
+    background-image: url(/images/inicio/img-3.jpeg);
+}
+
+.imagen-menu a{
+    height: 100%;
+    width: 100%;
+}
+
+.imagen-menu p{
+    font-family: helveticabold;
+    font-size: .6em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 15px;
+    color: rgb(220, 220, 220);
+}
+
+.imagen-menu:hover{
+    cursor: pointer;
+    box-shadow: rgb(0, 0, 0)  0px 12px 20px -2px, rgba(0, 0, 0, 0.3) 0px 2px 2px -3px; 
+    transition-duration: .5s;
+    position: relative;
+    bottom:1px;
+    transition-duration: 1s;
+}
+
+
+.imagen-menu:not(:hover){
+    box-shadow: rgba(0, 0, 0, 0.4)  0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+    transition-duration: .25s;
+}
+
+
+
+/* Información sobre la aplicación */
+
+footer{
+    height:50px; 
+    width:100vw; 
+    padding:0px 10px 10px 0px;
+    position: absolute;
+    z-index:3; 
+    bottom:0px; 
+}
+
+#info{
+    height:30px;
+    width:30px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    font-family: bagnard;
+    color:white;
+    border: none;
+}
+
+#info:hover{
+    border:1px solid white;
+    cursor:pointer;
+}
+
+#pop-up{
+    position: absolute;
+    display: none;
+    width:30em;
+    height:40em;
+    background-color: var(--background-color);
+    transform: translate(-50%, -50%);
+    border:1px solid white;
+    top:50%;
+    left:50%;
+    z-index: 3;
+    color: white;
+    animation:entrada-pop-up .5s cubic-bezier(.25,.46,.45,.94) forwards; 
+    padding: 20px 50px 30px 50px;
+}
+
+#pop-up section{
+    height:60%;
+}
+
+#pop-up section p:nth-of-type(3){
+    font-size: .5em;
+}
+
+#contenedor-logos-dev img{
+ width:calc(100%/6);
+ margin-bottom:10px;
+}
+
+#pop-up span{
+    margin-right: -30px;
+}
+
+#pop-up h3{
+    font-family: yaseva;
+    color:rgb(220, 220, 220);
+    letter-spacing: 2px;
+    margin: .3em 0em .3em 0em;
+    font-size:3em;
+    padding-bottom: .2em;
+    border-bottom:.5px solid white;
+    text-align: center;
+}
+
+#pop-up h4{
+    font-family: yaseva;
+    color:rgb(220, 220, 220);
+    letter-spacing: 2px;
+    font-size: .8em;
+    text-align: end;
+}
+
+#pop-up section{
+ margin-top: 3em;
+}
+
+#pop-up a{
+    color: white;
+    border-bottom: .1px solid white;
+}
+
+#pop-up a:hover{
+    cursor: pointer;    
+}
+
+#pop-up p{
+    text-align: justify;
+    font-family: helveticathin;
+    font-size:.7em;
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+/* Descripción de la playa*/
+
+#pop-descripcion{
+    position: absolute;
+    display: none; 
+    width:30em;
+    height:35em;
+    background-color: var(--background-color);
+    border:1px solid white;
+    top:50%;
+    left:50%;
+    z-index: 3;
+    color: white;
+    padding: 20px 50px 30px 50px;
+    animation:descripcion .5s forwards;
+}
+
+.carac-1{
+    font-family: yaseva;
+    font-size:1.2em;
+}
+
+.carac-2{
+    font-family: helveticathin;
+    font-size:.7em;
+    letter-spacing: 1.5px;
+}
+
+#section-descripcion{
+    text-align: end;
+}
+
+#descripcion-pagina{
+    font-family: helveticathin;
+    font-size:.8em;
+    border-top:1px solid white;
+    padding-top:2em;
+    margin-top:2em;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 2px;  
+}
+
+#span-close{
+    margin-right: -30px;
+}
+
+.close-btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: helveticathin;
+    font-size:1.5em;
+}
+
+/* Animaciones: */
+
+@keyframes entrada-pop-up{
+    0%{transform:scale(0) translate(-50%, -50%);opacity:1}
+    100%{transform:scale(1)translate(-50%, -50%);transform-origin:100% 100%;opacity:1}
+}
+
+@keyframes descripcion{
+    0%{transform:scale(0) translate(-50%, -50%)}
+    100%{transform:scale(1)translate(-50%, -50%)}
+}
+
+@keyframes zoom{
+    0%{transform:scale(0);opacity:1}
+    100%{transform:scale(1);opacity:1}
+}
+
+@media (max-width:450px) {
+
+    #div-texto{
+        padding:0px 0px 0px 10px;
+    }
+
+    #div-texto h2{
+        width:70%;
+        font-size: 0.4em;
+    } 
+    
+    #div-texto h3{
+        font-size:2em;
+    }
+
+    #menu-row{
+        margin-left: 1.5em;
+    }
+
+    #div-texto{
+        transform: rotate(-90deg);
+    }
+
+    video{
+        height: 100vh;
+        width: auto;
+    }
+}
+
+
+@media (max-width:500px){
+    #pop-up{
+        width:98vw;
+        height: 80vh;
+    }
+
+    #pop-up h3{
+        font-size:2.3em;
+    }
+
+    #pop-descripcion{
+        width:98vw;
+        height: 80vh;
+    }
+
+    #contenedor-section{
+        height: 80%;
+        margin-top: 3em;
+    }
+
+    #btn-sound:hover span{
+        cursor: pointer;
+        letter-spacing: 4px;       
+    }
+    
+    #btn-sound:not(:hover) span{
+        cursor: pointer;
+        letter-spacing: 4px;     
+    }
+    
+    #sunset-time:hover #hora{
+        cursor: pointer;
+        letter-spacing: 4px;     
+    }
+}
+
+
+@media (min-width:750px) {
+
+    #div-texto h2{
+        width:70%;
+        font-size: 0.6em;
+    } 
+    
+    #div-texto h3{
+        font-size:3em;
+    }
+    
+    #div-texto div{
+        width: 40%;
+    }
+
+    .texto-ajustes{
+        font-family: helveticathin;
+        letter-spacing: 4px;
+        color:var(--letter-color);
+        font-size:.6em;
+    }
+
+    #sunset-time span:first-child{
+        font-size:0.8em;
+        padding:5px;
+    }
+    
+    #sunset-time span:last-child{
+        padding-top: 12px;
+        font-size:0.5em;
+    }
+}
+
+
+
+
+
+
+
