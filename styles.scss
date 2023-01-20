@@ -26,6 +26,11 @@ $main-color-dark:#25303b;
 
 html{
     scroll-behavior: smooth;
+
+    //BODY:
+    #body-gallery{
+        height: 100%;
+    }
     
     //HEADER
     #menu-galeria{
