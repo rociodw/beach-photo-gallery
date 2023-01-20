@@ -20,7 +20,7 @@
 
 $letter-color:#a5a5a5;
 $main-color-dark:#25303b;
-$--doc-height:100%;
+
 
 
 
@@ -29,11 +29,11 @@ $--doc-height:100%;
 html{
     scroll-behavior: smooth;
     width: 100%;
-    height: $--doc-height;
+    height: 100vh;
 
     //BODY:
     #body-gallery{
-        height: $--doc-height;
+        height: 100vh;
         padding: 0%;
         margin: 0%;
     }
@@ -111,9 +111,9 @@ html{
         //Contenedor de la galería central
     #gallery-container{
         width: 600vw;
-        height:100vh;
+        height:100%;
         position: fixed;
-        top: 0;
+        bottom: 0px;
         left: 0;
         z-index: 1;
         #main-row{
