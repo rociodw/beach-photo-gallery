@@ -30,6 +30,7 @@ html{
     scroll-behavior: smooth;
     width: 100%;
     height: 100vh;
+    background-color: red;
 
     //BODY:
     #body-gallery{
@@ -37,6 +38,7 @@ html{
         width: 100vw;
         padding: 0%;
         margin: 0%;
+        background-color: greenyellow;
     }
     
     //HEADER
@@ -92,6 +94,7 @@ html{
         //Contenedor en segundo plano con el alto suficiente para que la página pueda hacer scroll.
     main{
         width: 100vw;
+        background-color: yellow;
         #cuerpo-gallery{
             background-color: #25303b;
             margin: 0%;
