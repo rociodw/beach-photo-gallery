@@ -84,6 +84,17 @@ livePalmera.addEventListener('mouseup', function(){
     imagenCentro.style.opacity='1'
 })
 
+livePalmera.addEventListener('touchstart', function(){
+    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/palmera.mov" type="video/mp4"></video>'
+    videoCentro.style.display='block'
+    imagenCentro.style.opacity='0.2'
+})
+
+livePalmera.addEventListener('touchend', function(){
+    videoCentro.style.display='none'
+    imagenCentro.style.opacity='1'
+})
+
 livePaseo.addEventListener('mousedown', function(){
     videoCentro.innerHTML='<video autoplay muted loop><source src="/video/paseoCastillo.mp4" type="video/mp4"></video>'
     videoCentro.style.display='block'
@@ -94,6 +105,18 @@ livePaseo.addEventListener('mouseup', function(){
     videoCentro.style.display='none'
     imagenCentro.style.opacity='1'
 })
+
+livePaseo.addEventListener('touchstart', function(){
+    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/paseoCastillo.mp4" type="video/mp4"></video>'
+    videoCentro.style.display='block'
+    imagenCentro.style.opacity='0.2'
+})
+
+livePaseo.addEventListener('touchend', function(){
+    videoCentro.style.display='none'
+    imagenCentro.style.opacity='1'
+})
+
 
 liveCastillo.addEventListener('mousedown', function(){
     videoCentro.innerHTML='<video autoplay muted loop><source src="/video/castillo.mp4" type="video/mp4"></video>'
@@ -106,6 +129,17 @@ liveCastillo.addEventListener('mouseup', function(){
     imagenCentro.style.opacity='1'
 })
 
+liveCastillo.addEventListener('touchstart', function(){
+    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/castillo.mp4" type="video/mp4"></video>'
+    videoCentro.style.display='block'
+    imagenCentro.style.opacity='0.2'
+})
+
+liveCastillo.addEventListener('touchend', function(){
+    videoCentro.style.display='none'
+    imagenCentro.style.opacity='1'
+})
+
 liveSky.addEventListener('mousedown', function(){
     videoCentro.innerHTML='<video autoplay muted loop><source src="/video/sky.mp4" type="video/mp4"></video>'
     videoCentro.style.display='block'
@@ -113,6 +147,17 @@ liveSky.addEventListener('mousedown', function(){
 })
 
 liveSky.addEventListener('mouseup', function(){
+    videoCentro.style.display='none'
+    imagenCentro.style.opacity='1'
+})
+
+liveSky.addEventListener('touchstart', function(){
+    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/sky.mp4" type="video/mp4"></video>'
+    videoCentro.style.display='block'
+    imagenCentro.style.opacity='0.2'
+})
+
+liveSky.addEventListener('touchend', function(){
     videoCentro.style.display='none'
     imagenCentro.style.opacity='1'
 })
