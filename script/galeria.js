@@ -2,11 +2,12 @@ var cuerpoGallery=document.getElementById('cuerpo-gallery')
 var alturaDoc=parseInt(cuerpoGallery.getBoundingClientRect().height)
 
 //La siguiente acción recargará la página cada vez que el tamaño de la pantalla cambie con el fin de que el valor de los datos sean actualizados.
+if (window.screen.width > 570){
  window.addEventListener('resize', function(){
      location.reload()
  }
  )
-
+}
 window.onscroll=function(){
     var imagenCentro=document.getElementById('contenedor-imagen-centro')
     var imagenLogo=document.getElementById('logo-centro')
