@@ -2,10 +2,10 @@ var cuerpoGallery=document.getElementById('cuerpo-gallery')
 var alturaDoc=parseInt(cuerpoGallery.getBoundingClientRect().height)
 
 //La siguiente acción recargará la página cada vez que el tamaño de la pantalla cambie con el fin de que el valor de los datos sean actualizados.
- window.addEventListener('resize', function(){
-     location.reload()
- }
- )
+//  window.addEventListener('resize', function(){
+//      location.reload()
+//  }
+//  )
 
 window.onscroll=function(){
     var imagenCentro=document.getElementById('contenedor-imagen-centro')
@@ -30,10 +30,10 @@ window.onscroll=function(){
     imagenLogo.style.display='none'
 
     //Para desplazar el contenedor en posición fixed cuantos pixeles hacen scroll hacia abajo
-    elementoscroll.style.left= -(pixScroll*0.5)+'px'
+    elementoscroll.style.left= -pixScroll+'px'
 
     //Para que corresponsa el fin del scroll con el final del contenedor fixed:
-    cuerpoGallery.style.height= ((alturaDoc*2)+(alturaDoc-scrollVertical))-anchuraPantalla +'px'
+    cuerpoGallery.style.height= (alturaDoc+(alturaDoc-scrollVertical))-anchuraPantalla +'px'
 
     //Para que la primera imagen aparezca antes de llegar a la mitad de la anchura de la pantalla
     if(imagen2>=mitadVentana){
