@@ -161,6 +161,7 @@ html #contenedor-fixed #contenedor-imagen-centro {
   align-items: center;
   overflow: hidden;
   padding: 0%;
+  background-repeat: no-repeat;
 }
 html #contenedor-fixed #contenedor-imagen-izquierda {
   background-size: 50%;
