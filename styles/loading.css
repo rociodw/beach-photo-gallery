@@ -5,8 +5,6 @@
 
 html {
     scroll-behavior: smooth;
-    position:sticky;
-    bottom:0px;
 }
 
 body {
@@ -15,6 +13,8 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: #000000;
+    position: sticky;
+    bottom: 0px;
 }
 
 #contenedor-imagen {
