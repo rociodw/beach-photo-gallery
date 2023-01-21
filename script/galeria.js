@@ -165,4 +165,6 @@ liveSky.addEventListener('touchend', function(){
 window.addEventListener('load', function() {
     console.log('La página ha terminado de cargarse!!');
 });
+document.oncontextmenu = function(){return false} 
+
 
