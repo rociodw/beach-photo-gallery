@@ -70,9 +70,6 @@ html #menu-galeria #contenedor-botones .circulo-menu-2 {
   margin-left: 5px;
   background-color: #a5a5a5;
 }
-html main {
-  width: 100vw;
-}
 html main #cuerpo-gallery {
   background-color: #25303b;
   margin: 0%;
@@ -83,7 +80,6 @@ html main #cuerpo-gallery {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 html main #cuerpo-gallery img {
   height: 100vh;
@@ -265,14 +261,6 @@ html::-webkit-scrollbar {
   }
   #contenedor-imagen-centro {
     width: 85vw;
-  }
-}
-@media (max-width: 768px) {
-  #row-imagen-balneario {
-    height: 70vh;
-  }
-  #contenedor-decor {
-    height: 70vh;
   }
 }
 @media (min-width: 768px) {

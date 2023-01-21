@@ -92,7 +92,6 @@ html{
     //MAIN
         //Contenedor en segundo plano con el alto suficiente para que la página pueda hacer scroll.
     main{
-        width: 100vw;
         #cuerpo-gallery{
             background-color: $main-color-dark;
             margin: 0%;
@@ -103,7 +102,6 @@ html{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            overflow: hidden;
             img{
                 height: 100vh;
             }
@@ -317,19 +315,11 @@ html::-webkit-scrollbar{
     }
 
     #contenedor-imagen-centro{
-            width: 85vw;
-        }      
+        width: 85vw;
+    }   
 }
 
-@media (max-width:768px ) {
-    #row-imagen-balneario{
-        height: 70vh;
-    }
 
-    #contenedor-decor{
-        height: 70vh;
-    }
-}
 
 @media (min-width:768px ) {
     #contenedor-hora{
