@@ -17,3 +17,4 @@ arrayFrases.forEach(function (element, index) {
    }, index*1000);
 })
 
+document.oncontextmenu = function(){return false} 

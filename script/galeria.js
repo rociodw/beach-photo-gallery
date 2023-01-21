@@ -30,10 +30,10 @@ window.onscroll=function(){
     imagenLogo.style.display='none'
 
     //Para desplazar el contenedor en posición fixed cuantos pixeles hacen scroll hacia abajo
-    elementoscroll.style.left= -pixScroll+'px'
+    elementoscroll.style.left= -(pixScroll*0.5)+'px'
 
     //Para que corresponsa el fin del scroll con el final del contenedor fixed:
-    cuerpoGallery.style.height= (alturaDoc+(alturaDoc-scrollVertical))-anchuraPantalla +'px'
+    cuerpoGallery.style.height= ((alturaDoc*2)+(alturaDoc-scrollVertical))-anchuraPantalla +'px'
 
     //Para que la primera imagen aparezca antes de llegar a la mitad de la anchura de la pantalla
     if(imagen2>=mitadVentana){
