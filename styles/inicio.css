@@ -435,7 +435,7 @@ footer{
     100%{transform:scale(1);opacity:1}
 }
 
-@media (max-width:450px) {
+@media (max-width:500px) {
 
     #div-texto{
         padding:0px 0px 0px 10px;
