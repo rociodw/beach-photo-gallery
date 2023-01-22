@@ -462,10 +462,7 @@ footer{
         height: 100vh;
         width: auto;
     }
-}
-
-
-@media (max-width:500px){
+    
     #pop-up{
         width:98vw;
         height: 80vh;
@@ -482,7 +479,6 @@ footer{
 
     #contenedor-section{
         height: 80%;
-        margin-top: 3em;
     }
 
     #btn-sound:hover span{
