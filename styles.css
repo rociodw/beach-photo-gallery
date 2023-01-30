@@ -76,6 +76,7 @@ html #menu-galeria #contenedor-botones .circulo-menu-2 {
 }
 html main {
   height: 80%;
+  background-color: #a5a5a5;
 }
 html main #cuerpo-gallery {
   background-color: #25303b;
@@ -94,7 +95,6 @@ html main #cuerpo-gallery img {
 html #gallery-container {
   width: 800vw;
   height: 100%;
-  background-color: red;
   position: fixed;
   top: 0px;
   left: 0;

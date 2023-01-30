@@ -98,6 +98,7 @@ html{
         //Contenedor en segundo plano con el alto suficiente para que la página pueda hacer scroll.
     main{
         height: 80%;
+        background-color: #a5a5a5;
         #cuerpo-gallery{
             background-color: $main-color-dark;
             margin: 0%;
@@ -118,7 +119,6 @@ html{
     #gallery-container{
         width: 800vw;
         height:100%;
-        background-color: red;
         position: fixed;
         top: 0px;
         left: 0;
