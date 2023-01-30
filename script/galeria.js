@@ -1,12 +1,5 @@
 var cuerpoGallery=document.getElementById('cuerpo-gallery')
-// var alturaDoc=parseInt(cuerpoGallery.getBoundingClientRect().height)
-// var alturaDoc=cuerpoGallery.clientHeight
-
-let alturaDoc = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
-  );
+var alturaDoc=parseInt(cuerpoGallery.getBoundingClientRect().height)
 
 //La siguiente acción recargará la página cada vez que el tamaño de la pantalla cambie con el fin de que el valor de los datos sean actualizados.
 if (window.screen.width > 570){
