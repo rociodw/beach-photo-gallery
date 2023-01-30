@@ -72,6 +72,7 @@ var liveSky=document.getElementById('live-sky')
 var videoCentro=document.getElementById('video')
 var imagenCentro=document.getElementById('contenedor-imagen-centro')
 
+
 //Cuando el ratón se mantiene pulsado en los botones con la clase 'live', se mostrará un vídeo, cuando se deje de pulsar, éste desaparecerá.
 
 livePalmera.addEventListener('mousedown', function(){

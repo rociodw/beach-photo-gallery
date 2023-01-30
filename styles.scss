@@ -29,12 +29,12 @@ $main-color-dark:#25303b;
 html{
     scroll-behavior: smooth;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     user-select: none;
 
     //BODY:
     #body-gallery{
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         padding: 0%;
         margin: 0%;
@@ -104,7 +104,7 @@ html{
             justify-content: space-between;
             align-items: center;
             img{
-                height: 100vh;
+                height: 100%;
             }
         }
     }
@@ -123,18 +123,18 @@ html{
             align-items: end;
             #contenedor-miniaturas{
                 width: 100%;
-                height: 20vh;
+                height: 20%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 .img-miniatura{
-                    height:15vh; 
-                    width:15vh; 
+                    height:15%; 
+                    width:15%; 
                     overflow: hidden;
                     border:3px solid white;
                     filter: saturate(0);
                     img{
-                        width:15vh;
+                        width:15%;
                         object-fit: fill;
                     }
                     .live{
@@ -144,8 +144,8 @@ html{
                         color: white;
                         font-family:poiret;
                         font-size: 30px;
-                        height:15vh; 
-                        width:15vh;
+                        height:15%; 
+                        width:15%;
                     }
                     
                     .live:hover{
@@ -178,14 +178,14 @@ html{
 
     #contenedor-fixed{
         width: 100vw;
-        height:60vh;
+        height:60%;
         position: fixed;
         transform: translate(-50%, -50%);
         top:40%;
         left:50%;
         z-index: 2;
         .columna-fixed{
-            height: 60vh;
+            height: 60%;
         }
         #contenedor-imagen-centro{
             background-size: cover;
@@ -212,8 +212,8 @@ html{
 
     //Videos
     #video{
-        height: 60vh;
-        width: 30vh;
+        height: 60%;
+        width: 30%;
         position: fixed;
         transform:translate(-50%,-50%);
         top:40%;
@@ -296,11 +296,11 @@ html::-webkit-scrollbar{
 @media (max-width:768px ) {
 
     #row-imagen-balneario{
-        height: 70vh;
+        height: 70%;
     }
 
     #contenedor-decor{
-        height: 70vh;
+        height: 70%;
     }
 }
 
