@@ -117,6 +117,7 @@ html{
         bottom: 0px;
         left: 0;
         z-index: 1;
+        overflow: hidden;
         #main-row{
             height: 100%;
             display: flex;
@@ -173,6 +174,10 @@ html{
         }
     
     }
+
+    #gallery-container::-webkit-scrollbar{
+        display: none;
+    }
     
         //Contenedor en posición fija con efecto de scroll
 
@@ -184,6 +189,7 @@ html{
         top:40%;
         left:50%;
         z-index: 2;
+        overflow: hidden;
         .columna-fixed{
             height: 60vh;
         }
@@ -210,6 +216,9 @@ html{
         }
     }
 
+    #contenedor-fixed::-webkit-scrollbar{
+        display: none;
+    }
     //Videos
     #video{
         height: 60vh;
