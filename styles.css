@@ -95,7 +95,6 @@ html #gallery-container {
   bottom: 0px;
   left: 0;
   z-index: 1;
-  display: none;
 }
 html #gallery-container #main-row {
   height: 100%;
@@ -209,7 +208,6 @@ html footer {
   align-items: end;
   justify-content: space-between;
   padding: 0px 20px 10px 20px;
-  display: none;
 }
 html #down {
   height: 30px;

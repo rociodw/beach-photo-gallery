@@ -14,7 +14,7 @@ window.onscroll=function(){
     var pixScroll=window.scrollY
     var anchuraPantalla=window.innerWidth
     var elementoscroll=document.getElementById('gallery-container')
-    var altoventana=window.innerHeight
+    var altoventana=window.clientHeight
     //Para conocer el scrollY cuando llega al bottom de la ventana sin realizar scroll
     var scrollVertical= alturaDoc-altoventana
     var miniaturas=document.getElementsByClassName('img-miniatura')
