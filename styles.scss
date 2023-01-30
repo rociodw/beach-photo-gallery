@@ -104,7 +104,7 @@ html{
             justify-content: space-between;
             align-items: center;
             img{
-                height: 100%;
+                height: 100vh;
             }
         }
     }
@@ -123,18 +123,18 @@ html{
             align-items: end;
             #contenedor-miniaturas{
                 width: 100%;
-                height: 20%;
+                height: 20vh;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 .img-miniatura{
-                    height:15%; 
-                    width:15%; 
+                    height:15vh; 
+                    width:15vh; 
                     overflow: hidden;
                     border:3px solid white;
                     filter: saturate(0);
                     img{
-                        width:15%;
+                        width:15vh;
                         object-fit: fill;
                     }
                     .live{
@@ -144,8 +144,8 @@ html{
                         color: white;
                         font-family:poiret;
                         font-size: 30px;
-                        height:15%; 
-                        width:15%;
+                        height:15vh; 
+                        width:15vh;
                     }
                     
                     .live:hover{
@@ -185,7 +185,7 @@ html{
         left:50%;
         z-index: 2;
         .columna-fixed{
-            height: 60%;
+            height: 60vh;
         }
         #contenedor-imagen-centro{
             background-size: cover;
@@ -212,8 +212,8 @@ html{
 
     //Videos
     #video{
-        height: 60%;
-        width: 30%;
+        height: 60vh;
+        width: 30vh;
         position: fixed;
         transform:translate(-50%,-50%);
         top:40%;
@@ -296,11 +296,11 @@ html::-webkit-scrollbar{
 @media (max-width:768px ) {
 
     #row-imagen-balneario{
-        height: 70%;
+        height: 70vh;
     }
 
     #contenedor-decor{
-        height: 70%;
+        height: 70vh;
     }
 }
 
