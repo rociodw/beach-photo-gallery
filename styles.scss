@@ -52,6 +52,7 @@ html{
         padding:1em 1em 0em 1em;
         z-index: 3;
 
+
         #contenedor-botones{
             display: flex;
             flex-direction: column;
@@ -188,6 +189,7 @@ html{
         top:40%;
         left:50%;
         z-index: 2;
+        touch-action: none;
         .columna-fixed{
             height: 60vh;
         }
