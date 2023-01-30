@@ -1,6 +1,12 @@
 var cuerpoGallery=document.getElementById('cuerpo-gallery')
 // var alturaDoc=parseInt(cuerpoGallery.getBoundingClientRect().height)
-var alturaDoc=cuerpoGallery.clientHeight
+// var alturaDoc=cuerpoGallery.clientHeight
+
+let alturaDoc = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+  );
 
 //La siguiente acción recargará la página cada vez que el tamaño de la pantalla cambie con el fin de que el valor de los datos sean actualizados.
 if (window.screen.width > 570){
@@ -13,9 +19,9 @@ window.onscroll=function(){
     var imagenCentro=document.getElementById('contenedor-imagen-centro')
     var imagenLogo=document.getElementById('logo-centro')
     var pixScroll=window.scrollY
-    var anchuraPantalla=window.clientWidth
+    var anchuraPantalla=window.innerWidth
     var elementoscroll=document.getElementById('gallery-container')
-    var altoventana=window.clientHeight
+    var altoventana=window.innerHeight
     //Para conocer el scrollY cuando llega al bottom de la ventana sin realizar scroll
     var scrollVertical= alturaDoc-altoventana
     var miniaturas=document.getElementsByClassName('img-miniatura')
