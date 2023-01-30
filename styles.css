@@ -83,7 +83,7 @@ html main #cuerpo-gallery {
   align-items: center;
 }
 html main #cuerpo-gallery img {
-  height: 100vh;
+  height: 100%;
 }
 html #gallery-container {
   width: 800vw;
@@ -155,6 +155,9 @@ html #contenedor-fixed {
   left: 50%;
   z-index: 2;
   overflow: hidden;
+}
+html #contenedor-fixed #fila-galeria {
+  height: 100%;
 }
 html #contenedor-fixed .columna-fixed {
   height: 60vh;
@@ -255,10 +258,10 @@ html::-webkit-scrollbar {
 
 @media (max-width: 768px) {
   #row-imagen-balneario {
-    height: 70vh;
+    height: 70%;
   }
   #contenedor-decor {
-    height: 70vh;
+    height: 70%;
   }
 }
 @media (max-width: 570px) {

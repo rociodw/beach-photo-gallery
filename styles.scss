@@ -47,6 +47,7 @@ html{
         width: 100%;
         padding:1em 1em 0em 1em;
         z-index: 3;
+     
 
         #contenedor-botones{
             display: flex;
@@ -104,7 +105,7 @@ html{
             justify-content: space-between;
             align-items: center;
             img{
-                height: 100vh;
+                height: 100%;
             }
         }
     }
@@ -190,6 +191,10 @@ html{
         left:50%;
         z-index: 2;
         overflow: hidden;
+
+        #fila-galeria{
+            height: 100%;
+        }
         .columna-fixed{
             height: 60vh;
         }
@@ -305,11 +310,11 @@ html::-webkit-scrollbar{
 @media (max-width:768px ) {
 
     #row-imagen-balneario{
-        height: 70vh;
+        height: 70%;
     }
 
     #contenedor-decor{
-        height: 70vh;
+        height: 70%;
     }
 }
 
