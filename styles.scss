@@ -51,6 +51,7 @@ html{
         width: 100%;
         padding:1em 1em 0em 1em;
         z-index: 3;
+        display: none;
 
 
         #contenedor-botones{
@@ -103,7 +104,7 @@ html{
             margin: 0%;
             padding: 0%;
             width:100vw;
-            height: 800%;
+            height: 800vw;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
