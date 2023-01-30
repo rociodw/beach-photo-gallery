@@ -35,7 +35,6 @@ html #menu-galeria {
   width: 100%;
   padding: 1em 1em 0em 1em;
   z-index: 3;
-  display: none;
 }
 html #menu-galeria #contenedor-botones {
   display: flex;
@@ -154,6 +153,7 @@ html #contenedor-fixed {
   top: 40%;
   left: 50%;
   z-index: 2;
+  display: none;
 }
 html #contenedor-fixed .columna-fixed {
   height: 60vh;
