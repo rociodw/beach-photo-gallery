@@ -40,6 +40,10 @@ html{
         margin: 0%;
         overflow-x: hidden;
     }
+
+    #body-gallery::-webkit-scrollbar{
+        display: none;
+    }
     
     //HEADER
     #menu-galeria{
@@ -47,7 +51,6 @@ html{
         width: 100%;
         padding:1em 1em 0em 1em;
         z-index: 3;
-     
 
         #contenedor-botones{
             display: flex;
@@ -105,7 +108,7 @@ html{
             justify-content: space-between;
             align-items: center;
             img{
-                height: 100%;
+                height: 100vh;
             }
         }
     }
@@ -118,7 +121,6 @@ html{
         bottom: 0px;
         left: 0;
         z-index: 1;
-        overflow: hidden;
         #main-row{
             height: 100%;
             display: flex;
@@ -175,10 +177,6 @@ html{
         }
     
     }
-
-    #gallery-container::-webkit-scrollbar{
-        display: none;
-    }
     
         //Contenedor en posición fija con efecto de scroll
 
@@ -190,11 +188,6 @@ html{
         top:40%;
         left:50%;
         z-index: 2;
-        overflow: hidden;
-
-        #fila-galeria{
-            height: 100%;
-        }
         .columna-fixed{
             height: 60vh;
         }
@@ -224,6 +217,7 @@ html{
     #contenedor-fixed::-webkit-scrollbar{
         display: none;
     }
+
     //Videos
     #video{
         height: 60vh;
@@ -309,12 +303,13 @@ html::-webkit-scrollbar{
 
 @media (max-width:768px ) {
 
+
     #row-imagen-balneario{
-        height: 70%;
+        height: 70vh;
     }
 
     #contenedor-decor{
-        height: 70%;
+        height: 70vh;
     }
 }
 
