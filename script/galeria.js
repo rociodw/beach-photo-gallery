@@ -12,9 +12,9 @@ window.onscroll=function(){
     var imagenCentro=document.getElementById('contenedor-imagen-centro')
     var imagenLogo=document.getElementById('logo-centro')
     var pixScroll=window.scrollY
-    var anchuraPantalla=window.clientWidth
+    var anchuraPantalla=window.innerWidth
     var elementoscroll=document.getElementById('gallery-container')
-    var altoventana=window.clientHeight
+    var altoventana=window.innerHeight
     //Para conocer el scrollY cuando llega al bottom de la ventana sin realizar scroll
     var scrollVertical= alturaDoc-altoventana
     var miniaturas=document.getElementsByClassName('img-miniatura')
