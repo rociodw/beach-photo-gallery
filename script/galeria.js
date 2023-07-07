@@ -40,13 +40,14 @@ window.onscroll=function(){
     if(imagen2>=mitadVentana){
         imagenCentro.style.backgroundImage='url(/images/gallery/imagen-1.jpg)'
     }else{
-        for(i=0; i<=miniaturas.length;i++){
+
+        for(i=0; i<=miniaturas.length-1;i++){
             //Posición del eje x del centro de las miniaturas con respecto a la pantalla. 
             //Para ello restamos la mitad de la anchura de las imágenes con la posición de las mismas.
             var posicionImagen=(miniaturas[i].getBoundingClientRect().right) -mitadMiniaturas
 
-
             if(posicionImagen <= mitadVentana){
+
                 if(miniaturas[i]){
                     //Si la posición central de la imagen en miniatura se encuentra en la parte centro-izquierda, ésta aparecerá en la imagen central de la galería. La imagen anterior a ésta se situará en la izquierda y la próxima foto a su derecha.
                     imagenCentro.style.backgroundImage='url(/images/gallery/imagen-'+[i]+'.jpg)';
@@ -65,108 +66,33 @@ window.onscroll=function(){
 }
 
 
-var livePalmera=document.getElementById('live-palmera')
-var livePaseo=document.getElementById('live-paseo')
-var liveCastillo=document.getElementById('live-castillo')
-var liveSky=document.getElementById('live-sky')
+var livePalmera=document.getElementById('palmera')
+var livePaseo=document.getElementById('paseoCastillo')
+var liveCastillo=document.getElementById('castillo')
+var liveSky=document.getElementById('sky')
 var videoCentro=document.getElementById('video')
 var imagenCentro=document.getElementById('contenedor-imagen-centro')
 
 
 //Cuando el ratón se mantiene pulsado en los botones con la clase 'live', se mostrará un vídeo, cuando se deje de pulsar, éste desaparecerá.
 
-livePalmera.addEventListener('mousedown', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/palmera.mov" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
+const lives=[livePalmera, livePaseo, liveCastillo, liveSky]
 
-livePalmera.addEventListener('mouseup', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
 
-livePalmera.addEventListener('touchstart', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/palmera.mov" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
+lives.forEach((e)=>{
+    e.addEventListener('mousedown', function(){
+        videoCentro.innerHTML=`<video autoplay muted loop><source src="/video/${e.id}.mp4" type="video/mp4"></video>`
+     videoCentro.style.display='block'
+     imagenCentro.style.opacity='0.2'
+    })
 
-livePalmera.addEventListener('touchend', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
-
-livePaseo.addEventListener('mousedown', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/paseoCastillo.mp4" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
-
-livePaseo.addEventListener('mouseup', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
-
-livePaseo.addEventListener('touchstart', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/paseoCastillo.mp4" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
-
-livePaseo.addEventListener('touchend', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
+    e.addEventListener('mouseup', function(){
+        videoCentro.style.display='none'
+         imagenCentro.style.opacity='1'
+     })
 })
 
 
-liveCastillo.addEventListener('mousedown', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/castillo.mp4" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
 
-liveCastillo.addEventListener('mouseup', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
-
-liveCastillo.addEventListener('touchstart', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/castillo.mp4" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
-
-liveCastillo.addEventListener('touchend', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
-
-liveSky.addEventListener('mousedown', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/sky.mp4" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
-
-liveSky.addEventListener('mouseup', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
-
-liveSky.addEventListener('touchstart', function(){
-    videoCentro.innerHTML='<video autoplay muted loop><source src="/video/sky.mp4" type="video/mp4"></video>'
-    videoCentro.style.display='block'
-    imagenCentro.style.opacity='0.2'
-})
-
-liveSky.addEventListener('touchend', function(){
-    videoCentro.style.display='none'
-    imagenCentro.style.opacity='1'
-})
-
-window.addEventListener('load', function() {
-    console.log('La página ha terminado de cargarse!!');
-});
-document.oncontextmenu = function(){return false} 
 
 

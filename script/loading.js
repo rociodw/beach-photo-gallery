@@ -8,7 +8,6 @@ arrayFrases.forEach(function (element, index) {
     setTimeout(function(){
     frases.innerHTML=element
     if(index==arrayFrases.length-1){
-        console.log('hola');
         contenedorFrases.classList.add('last-frase-animacion')
         setTimeout(function () {
             boton.style.display='block'
@@ -17,4 +16,3 @@ arrayFrases.forEach(function (element, index) {
    }, index*1000);
 })
 
-document.oncontextmenu = function(){return false} 

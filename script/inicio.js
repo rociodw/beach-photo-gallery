@@ -23,5 +23,5 @@ btnPlaya.addEventListener('click',()=> {
     descripcion.style.display='block'
 })
 
-document.oncontextmenu = function(){return false} 
+
 

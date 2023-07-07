@@ -32,7 +32,6 @@ fetch(URL)
         var pmam = [sinpm[1]];
 
         var fechaUTC = new Date(ano, mes, dia, horas, minutos, segundos);
-        console.log(fechaUTC);
 
         //De la fecha en formato UTC extraemos la hora
         var reloj = fechaUTC.toLocaleTimeString();
